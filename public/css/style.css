@@ -1,0 +1,61 @@
+/* body{
+    font-family: 'Roboto', sans-serif;
+} */
+
+.brand {
+    font-size: 80px;
+}
+@media only screen and (max-width: 600px) {
+    .brand {
+      font-size: 28px;
+    }
+    #searchForm > * {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+    #movieRes{
+        font-size: 10px;
+        font-weight: normal;
+    }
+    #mapres{
+        font-size: 10px;
+        font-weight: normal; 
+    }
+    .loader{
+        align-items: center;
+    }
+  }
+
+.nav-link,.nav-item{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#resSea{
+    box-shadow:5px 10px 50px rgba(0, 0, 0, 0.15) ;
+}
+#design{
+    
+    line-height: 20px;
+    word-spacing: 0.25rem;
+}
+#colors{
+    color: blue;
+}
+
+
+.loader {
+    margin: 5rem auto;
+    text-align: center; }
+    .loader img {
+      height: 4rem;
+      width: 4rem;
+      fill: #F59A83;
+      transform-origin: 44% 50%;
+      animation: rotate 1.5s infinite linear; }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0); }
+    100% {
+      transform: rotate(360deg); } }
+  
+
