@@ -26,11 +26,12 @@ document.querySelector('#searchForm').addEventListener('submit',(e)=>{
     document.querySelector('#queryRes').innerHTML = '';
     renderLoader();
 
-    fetch(`https://api.serpstack.com/search?access_key=38fc02b7b0552e60f50648f8c474bbca&query=${googlRes}`)
+    fetch(`http://api.serpstack.com/search?access_key=e87670e9c0bc022606f2d69dd53ae725&query=${googlRes}`)
     .then(result =>{
         return result.json();
     })
     .then(data =>{
+        console.log(data);
         clearLoader();
         data.organic_results.forEach(res => {
             const markup = `
@@ -55,7 +56,6 @@ document.querySelector('#searchForm').addEventListener('submit',(e)=>{
             `;
               document.querySelector('#mapres').insertAdjacentHTML('beforeend',markup2)
         });
-        var url = data.local_map.url.replace("watch?v=", "v/");
 
         data.related_searches.forEach(res1 => {
             const markup1 = ` 
