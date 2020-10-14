@@ -26,7 +26,7 @@ document.querySelector('#searchForm').addEventListener('submit',(e)=>{
     document.querySelector('#queryRes').innerHTML = '';
     renderLoader();
 
-    fetch(`http://api.serpstack.com/search?access_key=38fc02b7b0552e60f50648f8c474bbca&query=${googlRes}`)
+    fetch(`https://api.serpstack.com/search?access_key=38fc02b7b0552e60f50648f8c474bbca&query=${googlRes}`)
     .then(result =>{
         return result.json();
     })
