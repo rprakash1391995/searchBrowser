@@ -6,7 +6,7 @@
  const renderLoader = () => {
     const loader = `
         <div class="${elementStrings.loader}">
-         <img src="/img/loading1.png" alt="">
+         <img src="./img/loading1.png" alt="">
             
         </div>
     `;
